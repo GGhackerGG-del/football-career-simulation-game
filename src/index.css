@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Archivo", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html, body {
+  background: #04120a;
+  font-family: "Archivo", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* custom scrollbars */
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-track { background: rgba(255,255,255,.03); border-radius: 8px; }
+*::-webkit-scrollbar-thumb { background: rgba(163,230,53,.25); border-radius: 8px; }
+*::-webkit-scrollbar-thumb:hover { background: rgba(163,230,53,.45); }
+
+input[type="range"] { accent-color: #a3e635; }
+
+::selection { background: #a3e635; color: #000; }
